@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Anon Quizlet",
+  "description": "Never sign into quizlet again!",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.quizlet.com/*"],
+      "js": ["display_selected.js"]
+    }
+  ], 
+  "icons": {
+    "16": "icons/quizlet_anon_16.png",
+    "48": "icons/quizlet_anon_48.png",
+    "128": "icons/quizlet_anon_128.png"
+  }
+}
